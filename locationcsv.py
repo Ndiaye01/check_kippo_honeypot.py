@@ -7,7 +7,6 @@ import json
 dbServer=''
 dbPass=''
 dbUser=''
-
 dbQuery='SELECT DISTINCT ip FROM sessions ;'
 
 
@@ -18,9 +17,7 @@ def geolocation (ip):
     s =  json_result["lat"]+";"+json_result["lon"]
     return s
 
-
-
-myDB = MySQLdb.connect(host="52.38.126.135",port=3306,user="test",passwd="test",db="kippo")
+myDB = MySQLdb.connect(host="",port=3306,user="",passwd="",db="")
 cursor = myDB.cursor()
 cursor.execute(dbQuery)
 result=cursor.fetchall()
