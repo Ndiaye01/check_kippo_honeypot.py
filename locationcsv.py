@@ -4,16 +4,12 @@ import csv
 import requests
 import json
 
-dbServer='kippo'
-dbPass='test'
-dbUser='test'
+dbServer=''
+dbPass=''
+dbUser=''
 
 dbQuery='SELECT DISTINCT ip FROM sessions ;'
 
-#db=dbapi.connect(host=dbServer,user=dbUser,passwd=dbPass)
-#cur=db.cursor()
-#cur.execute(dbQuery)
-#result=cur.fetchall()
 
 def geolocation (ip):
     s=""
@@ -35,13 +31,3 @@ for row in result:
 
 
 
-#for row in result:
-#    c.writerow(row)
-#c.writerow(result)
-
-#file=open("ip.csv","r")
-#test=csv.reader(file)
-#d = csv.writer(open("location.csv","w"))
-#for row in test:
-#    for line in row:
-#        d.writerow([geolocation(line)])
