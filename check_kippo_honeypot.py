@@ -2,7 +2,7 @@
 #!/usr/bin/python
 import MySQLdb,sys,requests,json
 
-myDB = MySQLdb.connect(host="52.38.126.135",port=3306,user="test",passwd="test",db="kippo")
+myDB = MySQLdb.connect(host="",port=,user="",passwd="",db="")
 cursor = myDB.cursor()
 
 
