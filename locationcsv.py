@@ -14,7 +14,7 @@ def geolocation (ip):
     s=""
     result =requests.get("https://extreme-ip-lookup.com/json/" +ip)
     json_result=json.loads (result.text)
-    s =  json_result["lat"]+";"+json_result["lon"]
+    s =  json_result["query"]+";"+json_result["lat"]+";"+json_result["lon"]
     return s
 
 myDB = MySQLdb.connect(host="",port=3306,user="",passwd="",db="")
