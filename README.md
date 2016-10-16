@@ -9,7 +9,7 @@ check_kippo_honeypot.py is an Icinga custom plugin to monitor a Kippo honeypot .
 -checks in real-time Top 10 most common used commands
 --checks in real-time Top 10 most common SSH client 
 
-check_kippo_honeypot presents 2 statuses to Icinga2 :
+check_kippo_honeypot presents 2 statutes to Icinga2 :
 OK : if no new attack has occured
 WARNING :if a new attack has occured
 
