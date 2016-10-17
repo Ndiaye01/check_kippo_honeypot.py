@@ -38,7 +38,7 @@ chmod +x /usr/lib/nagios/plugins/check\_kippo\_honeypot.py
  
  
  The second step is to edit your commands.conf and services.conf files.c heck\_kippo\_honeypot command has as argument "timeout = 320".
- 
+ ```
  {object CheckCommand "check\_kippo\_honeypot.py" {
 
   import "plugin-check-command"
@@ -47,6 +47,6 @@ chmod +x /usr/lib/nagios/plugins/check\_kippo\_honeypot.py
   
   timeout = 320
 }
- 
+ ```
 
 
