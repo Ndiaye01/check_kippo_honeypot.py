@@ -10,8 +10,7 @@ check_kippo_honeypot presents 2 statutes to Icinga2 :
 OK : if no new attack has occured
 WARNING :if a new attack has occured
 
-check_kippo_honeypot presents the total number of attacks as performance data for later visualization with PNP4NAGIOS or Graphite.
-The script locationcsv.py creates a CSV files of geogrphical coordinates of attackers for mapping with ?agvis-Geomap.
+check_kippo_honeypot presents the total number of attacks as performance data for later visualization with PNP4NAGIOS or Graphite. The script locationcsv.py creates a CSV files of geogrphical coordinates of attackers for mapping with ?agvis-Geomap.
 
 To integrate check\_kippo\_honeypot in Icinga Web2,
 
