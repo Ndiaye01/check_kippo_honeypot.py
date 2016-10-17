@@ -17,7 +17,7 @@ WARNING :if a new attack has occured.
 check_kippo_honeypot presents the total number of attacks as performance data for later visualization with PNP4NAGIOS or Graphite. The script locationcsv.py creates a CSV files of geogrphical coordinates of attackers for mapping with ?agvis-Geomap.
 
 ## Installation
-To integrate check\_kippo\_honeypot in Icinga Web2:
+To integrate check_kippo_honeypot in Icinga Web2:
 
 ###REQUIREMENTS : 
 - PYTHON
@@ -33,17 +33,17 @@ Download the plugin from the git repository and move it into  your PluginDir dir
 
 ```
 
-chmod +x /usr/lib/nagios/plugins/check\_kippo\_honeypot.py
+chmod +x /usr/lib/nagios/plugins/check_kippo_honeypot.py
 ```
  
  
  The second step is to edit your commands.conf and services.conf files.c heck\_kippo\_honeypot command has as argument "timeout = 320".
  ```
- {object CheckCommand "check\_kippo\_honeypot.py" {
+ {object CheckCommand "check_kippo_honeypot.py" {
 
   import "plugin-check-command"
   
-  command = [ PluginDir + "\/check\_kippo\_honeypot.py"]
+  command = [ PluginDir + "\check_kippo_honeypot.py"]
   
   timeout = 320
 }
