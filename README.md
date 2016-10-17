@@ -1,13 +1,10 @@
 # check_kippo_honeypot.py
-check_kippo_honeypot.py is an Icinga custom plugin to monitor a Kippo honeypot .It
+check_kippo_honeypot.py is an Icinga custom plugin to monitor a Kippo honeypot .It performs at each check:
 
--checks every 5 minutes if  the honeypot has recorded a new attack.If so ,changes status to WARNING and gives  relevant information about this attacker (e.g. if the attack succeeded or failed, IP, country ,region, used password,used username,authentication method,timestamp..)
--checks in real-time the total number of attacks 
--checks in real-time the top 30 IPs attackers with  respective number of attempts
--checks in real-time the Top 10 most com mon passwords 
--checks in real-time Top 10 most common usernames
--checks in real-time Top 10 most common used commands
---checks in real-time Top 10 most common SSH client 
+-Detection of a new attack with relevant information as used password/username combination during the session, the fail or the success , the ssh client version, the location of the attack, the ISP and the type of the ISP (residential/business/education)
+- If no new attack:The total number of attacks, the connections per ip, and the success ratio ,List of top 30 attackers, top 10 passwords, top 10 usernames, top 10 commands ,top 10 ssh clients
+-graphing of attacks
+-mapping of attacks
 
 check_kippo_honeypot presents 2 statutes to Icinga2 :
 OK : if no new attack has occured
