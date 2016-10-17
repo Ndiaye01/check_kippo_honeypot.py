@@ -1,10 +1,10 @@
 # check_kippo_honeypot.py
 check_kippo_honeypot.py is an Icinga custom plugin to monitor a Kippo honeypot .It performs at each check:
 
--Detection of a new attack with relevant information as used password/username combination during the session, the fail or the success , the ssh client version, the location of the attack, the ISP and the type of the ISP (residential/business/education)
+- Detection of a new attack with relevant information as used password/username combination during the session, the fail or the success , the ssh client version, the location of the attack, the ISP and the type of the ISP (residential/business/education)
 - If no new attack:The total number of attacks, the connections per ip, and the success ratio ,List of top 30 attackers, top 10 passwords, top 10 usernames, top 10 commands ,top 10 ssh clients
--graphing of attacks
--mapping of attacks
+- graphing of attacks
+- mapping of attacks
 
 check_kippo_honeypot presents 2 statutes to Icinga2 :
 OK : if no new attack has occured
@@ -24,7 +24,7 @@ REQUIREMENTS :
 -Icinga2 
 -Icinga Web 2
 
- download the plugin from the git repository and move it into  your PluginDir directory. To connect to your KIPPO  MySQL database, you should edit the file program and add your honeypot'IP to "host" and your  database credentials. The database credentials are the user,the password, created while setting up the KIPPO  MySQL  database to "user", "passwd", "db". Then you should make the plugin executable.
+Download the plugin from the git repository and move it into  your PluginDir directory. To connect to your KIPPO  MySQL database, you should edit the file program and add your honeypot'IP to "host" and your  database credentials. The database credentials are the user,the password, created while setting up the KIPPO  MySQL  database to "user", "passwd", "db". Then you should make the plugin executable.
  
  chmod +x /usr/lib/nagios/plugins/check\_kippo\_honeypot.py
  
