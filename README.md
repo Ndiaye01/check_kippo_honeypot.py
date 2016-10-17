@@ -16,13 +16,13 @@ The script locationcsv.py creates a CSV files of geogrphical coordinates of atta
 To integrate check\_kippo\_honeypot in Icinga Web2,
 
 REQUIREMENTS : 
--PYTHON
--PYTHON -MySqldb
--Python requests
--Kippo
--Kippo MySql database
--Icinga2 
--Icinga Web 2
+- PYTHON
+- PYTHON -MySqldb
+- Python requests
+- Kippo
+- Kippo MySql database
+- Icinga2 
+- Icinga Web 2
 
 Download the plugin from the git repository and move it into  your PluginDir directory. To connect to your KIPPO  MySQL database, you should edit the file program and add your honeypot'IP to "host" and your  database credentials. The database credentials are the user,the password, created while setting up the KIPPO  MySQL  database to "user", "passwd", "db". Then you should make the plugin executable.
  
